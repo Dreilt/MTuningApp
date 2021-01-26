@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mtuning.MainController">
+   <children>
+      <Label fx:id="selectedFileLabel" layoutX="14.0" layoutY="14.0" text="Brak pliku" />
+      <Button fx:id="selectFileButton" layoutX="33.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectFileAction" prefHeight="25.0" prefWidth="350.0" text="Wybierz plik" />
+      <Label layoutX="87.0" layoutY="104.0" text="Symbol" />
+      <ComboBox fx:id="symbolComboBox" disable="true" layoutX="133.0" layoutY="100.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="89.0" layoutY="139.0" text="Nazwa" />
+      <ComboBox fx:id="nameComboBox" disable="true" layoutX="133.0" layoutY="135.0" prefWidth="150.0" />
+      <Label layoutX="45.0" layoutY="174.0" text="Cena detaliczna" />
+      <ComboBox fx:id="cdComboBox" disable="true" layoutX="133.0" layoutY="170.0" prefWidth="150.0" />
+      <Label layoutX="52.0" layoutY="209.0" text="Cena hurtowa" />
+      <ComboBox fx:id="chComboBox" disable="true" layoutX="133.0" layoutY="205.0" prefWidth="150.0" />
+      <Label layoutX="52.0" layoutY="244.0" text="Kod kreskowy" />
+      <ComboBox fx:id="barcodeComboBox" disable="true" layoutX="133.0" layoutY="240.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="279.0" text="Symbol u dostawcy" />
+      <ComboBox fx:id="symbol2ComboBox" disable="true" layoutX="133.0" layoutY="275.0" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="314.0" text="Uwagi" />
+      <ComboBox fx:id="commentsComboBox" disable="true" layoutX="133.0" layoutY="310.0" prefWidth="150.0" />
+      <CheckBox fx:id="skipFirstRowCheckBox" disable="true" layoutX="23.0" layoutY="365.0" mnemonicParsing="false" text="Pomiń pierwszy wiersz" />
+      <CheckBox fx:id="editExistingProductsCheckBox" disable="true" layoutX="23.0" layoutY="394.0" mnemonicParsing="false" text="Edytuj istniejące towary" />
+      <Button fx:id="addProductsButton" disable="true" layoutX="165.0" layoutY="429.0" mnemonicParsing="false" onAction="#addProduct" text="Dodaj produkty" />
+      <TextArea fx:id="logTextArea" layoutX="7.0" layoutY="475.0" prefHeight="100.0" prefWidth="385.0" />
+   </children>
+</AnchorPane>
